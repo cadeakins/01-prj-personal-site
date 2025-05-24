@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+    <!-- Header section with bold background and centered content -->
+    <header>
+        <!-- Profile picture in a circle -->
+        <img src="img/headshot.jpg" alt="My Profile Picture" class="profile-pic">
+        <!-- Large name -->
+        <h1 class="main-name">Cade Medearis</h1>
+        <!-- Short, bold bio -->
+        <p class="bio">Aspiring web developer & creative thinker.</p>
+    </header>
+
+    <!-- Main content area for sections -->
+    <main>
+        <!-- About Me section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm a college student passionate about building bold, modern websites. I love learning new technologies and expressing creativity through code.
+            </p>
+        </section>
+
+
+                <!-- Skills section with icons (optional, can use emoji for simplicity) -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>💻 C++</li>
+                <li>🎨 CSS</li>
+                <li>🎨 HTML</li>
+                <li>⚡ ARMv8 Assembly</li>
+            </ul>
+        </section>
+        
+        <!-- Projects section with project cards -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <!-- Project 1 card -->
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A simple HTML and CSS website.</p>
+                    <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+                </div>
+                <!-- Project 2 card -->
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>My first JavaScript project.</p>
+                    <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

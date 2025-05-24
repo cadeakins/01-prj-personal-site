@@ -1,1 +1,176 @@
-/* Add you CSS here */
+/* Set a bold background and clean font for the whole page */
+body {
+    background-color: #fde9d4; /* light background */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center all text */
+}
+
+/* Bold header with a strong color and centered content */
+header {
+    background-image: url('img/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center; /* Center header content */
+    padding: 60px 20px 40px 20px;
+}
+
+/* Profile picture styling */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 5px solid #c9ada7;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(34,34,59,0.15);
+}
+
+/* Large, bold name */
+.main-name {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+}
+
+/* Bio with a bit more emphasis */
+.bio {
+    font-size: 1.2em;
+    color: #f2e9e4;
+    margin-top: 10px;
+    font-weight: 500;
+    background: rgba(10, 10, 85, 0.7);
+    display:inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(126, 126, 159, 0.1);
+}
+
+/* Main content area */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 10px 40px 10px;
+    text-align: center; /* Center main content */
+}
+
+/* Section headings */
+section h2 {
+    font-size: 2em; /* Make the heading bigger */
+    color: #4a4e69; /* Use a bold, stylish color */
+    letter-spacing: 2px; /* Add space between letters */
+    margin-bottom: 12px; /* Space below the heading */
+    font-weight: bold; /* Make the heading bold */
+    position: relative; /* Needed for the underline */
+    display: inline-block; /* Only as wide as the text */
+}
+
+/* Add a colored underline below each section heading */
+section h2::after {
+    content: "";
+    display: block;
+    margin: 8px auto 0 auto; /* Space above the underline, center it */
+    width: 50%; /* Underline is half the width of the text */
+    height: 4px; /* Thickness of the underline */
+    background: #c9ada7; /* Underline color */
+    border-radius: 2px; /* Rounded edges for the underline */
+}
+
+/* Skills list with emoji icons */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: inline-block; /* Make the list only as wide as its content */
+    text-align: left; /* Keep list items left-aligned inside the centered list */
+    margin: 0 auto 20px auto; /* Center the list */
+}
+
+.skills-list li {
+    background: #c9ada7;
+    color: #22223b;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    /* Simple shadow for effect */
+    box-shadow: 0 2px 6px rgba(34,34,59,0.07);
+}
+
+/* About section paragraph */
+#about p {
+    font-size: 1.1em;
+    color: #22223b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Projects section with card layout */
+.projects-container {
+    display: inline-block; /* Make the container only as wide as its content */
+    text-align: left; /* Keep project cards left-aligned inside the centered container */
+    margin: 0 auto;
+}
+
+/* Individual project card */
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(34,34,59,0.10);
+    padding: 22px 18px;
+    min-width: 220px;
+    max-width: 320px;
+    display: inline-block; /* Display cards side by side and centered */
+    vertical-align: top;
+    margin: 10px;
+    text-align: left; /* Keep text inside cards left-aligned */
+}
+
+.project-card h3 {
+    margin: 0 0 8px 0;
+    color: #4a4e69;
+    font-size: 1.2em;
+}
+
+.project-card p {
+    color: #22223b;
+    margin: 0 0 12px 0;
+    font-size: 1em;
+}
+
+.project-card a {
+    color: #22223b;
+    background: #c9ada7;
+    padding: 7px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.project-card a:hover {
+    background: #4a4e69;
+    color: #fff;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 700px) {
+    .projects-container {
+        flex-direction: column;
+        gap: 18px;
+    }
+    main {
+        padding: 10px 3px 30px 3px;
+    }
+    .profile-pic {
+        width: 90px;
+        height: 90px;
+    }
+    .main-name {
+        font-size: 1.5em;
+    }
+}
